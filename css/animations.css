@@ -1,0 +1,455 @@
+/**
+ * NEXUS 2026 - Animations & Effects
+ * Киберпанк-анимации, неоновые эффекты, плавные переходы
+ */
+
+/* SCROLL ANIMATION */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* FLOATING ANIMATION */
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px);
+    }
+    25% {
+        transform: translateY(-10px) translateX(2px);
+    }
+    50% {
+        transform: translateY(-20px) translateX(-2px);
+    }
+    75% {
+        transform: translateY(-10px) translateX(2px);
+    }
+}
+
+/* GLOW EFFECT */
+@keyframes glow-effect {
+    0%, 100% {
+        box-shadow: 0 0 8px rgba(0, 217, 255, 0.4), 0 0 16px rgba(0, 217, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 16px rgba(0, 217, 255, 0.8), 0 0 32px rgba(0, 217, 255, 0.4);
+    }
+}
+
+/* TEXT GLOW */
+@keyframes text-glow {
+    0%, 100% {
+        text-shadow: 0 0 8px rgba(0, 217, 255, 0.5), 0 0 16px rgba(0, 217, 255, 0.2);
+    }
+    50% {
+        text-shadow: 0 0 16px rgba(0, 217, 255, 0.8), 0 0 32px rgba(0, 217, 255, 0.4);
+    }
+}
+
+/* NEON PULSE */
+@keyframes neon-pulse {
+    0%, 100% {
+        opacity: 0.8;
+        text-shadow: 0 0 8px rgba(0, 217, 255, 0.4);
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 16px rgba(0, 217, 255, 0.8), 0 0 24px rgba(255, 0, 110, 0.4);
+    }
+}
+
+/* SLIDE IN LEFT */
+@keyframes slide-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* SLIDE IN RIGHT */
+@keyframes slide-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* SLIDE IN UP */
+@keyframes slide-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SLIDE IN DOWN */
+@keyframes slide-in-down {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FADE IN */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* FADE OUT */
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* SCALE UP */
+@keyframes scale-up {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ROTATE */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* CYBER SCAN */
+@keyframes cyber-scan {
+    0% {
+        box-shadow: inset 0 0 0 0 rgba(0, 217, 255, 0.3);
+    }
+    50% {
+        box-shadow: inset 0 0 16px 0 rgba(0, 217, 255, 0.1);
+    }
+    100% {
+        box-shadow: inset 0 0 0 0 rgba(0, 217, 255, 0.3);
+    }
+}
+
+/* DIGITAL DISTORTION */
+@keyframes digital-distort {
+    0%, 100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    25% {
+        clip-path: polygon(2% 1%, 100% 0, 100% 100%, 0 100%);
+    }
+    50% {
+        clip-path: polygon(0 2%, 100% 1%, 100% 100%, 2% 100%);
+    }
+    75% {
+        clip-path: polygon(1% 0, 100% 2%, 99% 100%, 0 99%);
+    }
+}
+
+/* NEON BORDER */
+@keyframes neon-border-pulse {
+    0%, 100% {
+        border-color: rgba(0, 217, 255, 0.3);
+        box-shadow: 0 0 8px rgba(0, 217, 255, 0.2);
+    }
+    50% {
+        border-color: rgba(0, 217, 255, 0.8);
+        box-shadow: 0 0 16px rgba(0, 217, 255, 0.4), inset 0 0 8px rgba(0, 217, 255, 0.1);
+    }
+}
+
+/* SIGNAL SCAN */
+@keyframes signal-scan {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* HOLOGRAM FLICKER */
+@keyframes hologram-flicker {
+    0%, 100% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.98;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0.99;
+    }
+    80% {
+        opacity: 1;
+    }
+}
+
+/* GLITCH EFFECT */
+@keyframes glitch-1 {
+    0%, 100% {
+        clip-path: polygon(0 0, 100% 0, 100% 5%, 0 5%);
+        transform: translate(0);
+    }
+    20% {
+        clip-path: polygon(0 15%, 100% 15%, 100% 20%, 0 20%);
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        clip-path: polygon(0 5%, 100% 5%, 100% 10%, 0 10%);
+        transform: translate(2px, -2px);
+    }
+    60% {
+        clip-path: polygon(0 20%, 100% 20%, 100% 25%, 0 25%);
+        transform: translate(-2px, 2px);
+    }
+    80% {
+        clip-path: polygon(0 10%, 100% 10%, 100% 15%, 0 15%);
+        transform: translate(2px, -2px);
+    }
+}
+
+/* DATA FLOW */
+@keyframes data-flow {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* PARTICLE FLOAT */
+@keyframes particle-float {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) translateX(50px);
+        opacity: 0;
+    }
+}
+
+/* CYBER PULSE */
+@keyframes cyber-pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+/* APPLY ANIMATIONS TO ELEMENTS */
+
+/* Header animations */
+.logo-text {
+    animation: text-glow 2s ease-in-out infinite;
+}
+
+.header-logo {
+    animation: slide-in-left 0.8s ease-out;
+}
+
+.header-controls {
+    animation: slide-in-right 0.8s ease-out;
+}
+
+/* Panel animations */
+.glass-panel {
+    animation: fade-in 0.6s ease-out, scale-up 0.6s ease-out;
+}
+
+.glass-panel:hover {
+    animation: glow-effect 0.3s ease-out forwards;
+}
+
+/* Avatar animation */
+.avatar-container {
+    animation: slide-in-left 0.8s ease-out 0.2s both;
+}
+
+.avatar-canvas {
+    animation: cyber-scan 3s ease-in-out infinite;
+}
+
+/* Alerts animation */
+.alert-item {
+    animation: slide-in-right 0.5s ease-out;
+}
+
+/* Stats animation */
+.stat-value {
+    animation: neon-pulse 2s ease-in-out infinite;
+}
+
+/* Crypto items animation */
+.crypto-item,
+.stock-item {
+    animation: slide-in-up 0.5s ease-out;
+    transition: all var(--transition-base);
+}
+
+.crypto-item:hover,
+.stock-item:hover {
+    transform: translateX(5px);
+    background: rgba(0, 217, 255, 0.1);
+    border-color: rgba(0, 217, 255, 0.3);
+}
+
+/* Emergency button animation */
+.btn-emergency {
+    animation: slide-in-up 0.8s ease-out 0.4s both;
+    transition: all var(--transition-base);
+}
+
+.btn-emergency:hover {
+    animation: neon-pulse 0.6s ease-in-out infinite;
+}
+
+/* Chart containers animation */
+.chart-container {
+    animation: slide-in-up 0.5s ease-out;
+}
+
+/* Footer ticker animation */
+.ticker-content {
+    animation: scroll 30s linear infinite;
+}
+
+/* Modal animations */
+.modal {
+    animation: scale-up 0.3s ease-out;
+}
+
+.modal-overlay {
+    animation: fade-in 0.3s ease-out;
+}
+
+.modal.hidden,
+.modal-overlay.hidden {
+    display: none !important;
+}
+
+/* Button animations */
+.btn-icon,
+.btn-ask,
+.btn-primary {
+    transition: all var(--transition-base);
+}
+
+.btn-icon:active,
+.btn-ask:active,
+.btn-primary:active {
+    transform: scale(0.95);
+}
+
+/* Scroll bar animation */
+::-webkit-scrollbar-thumb {
+    animation: cyber-pulse 2s ease-in-out infinite;
+}
+
+/* GLOW TEXT CLASS */
+.glow-text {
+    animation: text-glow 1.5s ease-in-out infinite;
+}
+
+/* PULSE CLASS */
+.pulse {
+    animation: cyber-pulse 1s ease-in-out infinite;
+}
+
+/* FLOATING CLASS */
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+/* GLITCH CLASS */
+.glitch {
+    animation: glitch-1 0.3s ease-in-out infinite;
+}
+
+/* HOLOGRAM CLASS */
+.hologram {
+    animation: hologram-flicker 0.1s ease-in-out infinite;
+}
+
+/* SLIDESHOW ANIMATION */
+@keyframes slideshow {
+    0%, 100% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    5%, 95% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* STAGGER ANIMATION */
+.stagger-item {
+    animation: slide-in-up 0.5s ease-out;
+}
+
+.stagger-item:nth-child(1) { animation-delay: 0s; }
+.stagger-item:nth-child(2) { animation-delay: 0.1s; }
+.stagger-item:nth-child(3) { animation-delay: 0.2s; }
+.stagger-item:nth-child(4) { animation-delay: 0.3s; }
+.stagger-item:nth-child(5) { animation-delay: 0.4s; }
+
+/* MEDIA QUERIES */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
